@@ -6,10 +6,10 @@ a)
 I's O(n) since the number it will run depends on n. 
 
 b)
-It's O(log n) since the number of operations changes.
+It's O(log n) since the inner loop executes n/2 times (j*2)).
 
 c)
-It is O(N) as the function has single recursive callstack and the inner function call is triggered by n. 
+It is O(N) as the function has single recursive callstack and the inner function call is triggered by n. If the n is 0 the recursive function is not called.
 ## Exercise II
 
 Since, floors are a sorted list of numbers, I would first find "the middle floor" and checking if eggs breaks there.
