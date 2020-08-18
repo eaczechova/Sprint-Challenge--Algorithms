@@ -106,7 +106,6 @@ class SortingRobot:
         #     self._list[smallest_index], self._list[cur_index] = self._list[cur_index], self._list[smallest_index]
         # return self._list
 
-        
         for i in range(0, len(self._list)):
             while self.can_move_right():
                 self.swap_item() 
@@ -116,7 +115,6 @@ class SortingRobot:
                     self.move_left()
                     self.swap_item() 
                     self.move_right() 
-                    self.set_light_on()
                 elif self.compare_item() <= 0:
                     self.move_left()
                     self.swap_item() 
@@ -124,7 +122,7 @@ class SortingRobot:
 
             while self.can_move_left(): 
                 self.move_left()   
-                self.move_left()
+                
 if __name__ == "__main__":
     # Test our your implementation from the command line
     # with `python robot_sort.py`
